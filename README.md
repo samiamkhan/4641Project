@@ -21,6 +21,14 @@ For our project, the team only used a subset of the available features. These in
 
 ### Approach
 
+Our team utilized Supervised Machine Learning for our project. When drafting our initial proposal, we discussed a variety of different techniques and how well they would align with our goal. We realized that the hierarchy of potential chess moves from a single starting state resembled a tree with branches that extend to represent different combinations of moves. As a result, we chose to utilize decision trees.
+
+In creating decision trees, each combination of moves represents a node. Using a Python dictionary, these move combinations serve as a key, and the games that correspond to this opening sequence of moves is stored as a list of values. To limit overfitting, we split our game data as follows: 80% training data, and 20% testing data. For each key in the training data, we used the players' ratings and the end result of the game (white wins, black wins, or stalemate) to train the decision tree. After completing the training, we ran the decision tree on the testing data and compared the predicted end result of the game to the actual outcome.
+
+This procedure was performed 10 times; initially, only the first move for each player was being considered, and in each iteration another move was added and a new list of keys was formed until the keys represented the first 10 moves of the game. As more moves were added, the tree began to branch out, and a wider variety of potential sequences of moves appeared as keys. As a result, one-off instances began to occur; with only one piece of data corresponding to a certain key, it was impossible to split into training and testing data, and in these situations the key was not included in our findings. 
+
+To visualize our results, we generated plots. -> Need to talk about and show plots here. <-
+
 ## Conclusion
 
 ### What We Accomplished
