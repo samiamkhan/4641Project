@@ -1,4 +1,4 @@
-# 4641 Project
+# Predicting Chess Match Results Based on Opening Moves
 
 Team Members: Samia Khan, Minseo Kwak, Ethan Jones, and Kyle Keirstead
 
@@ -34,3 +34,15 @@ To visualize our results, we generated plots. -> Need to talk about and show plo
 ### What We Accomplished
 
 ### Future Work
+
+In the future, our primary focus would revolve around using a larger dataset that offered more diversity in where its data was sampled. The dataset used in this project had 20,000 games, and though this is a significant amount of games, the increased branching as more opening moves were considered limited our ability to draw conclusions when considering higher amounts of opening moves.
+
+We would also be interested in seeing how our results would change when including more features in the decision tree's training. For example, would the average amount of time a player spends making each move help indicate their confidence and skill? The team also was interested in exploring the opening moves' significance as a fraction of the total number of moves in the game. This would mean that the first three moves in a game of thirty moves would be treated equivalently to evaluating the first eight moves in a game of eighty moves.
+
+## Distribution of Work
+
+* Kyle Keirstead: 
+* Minseo Kwak: 
+* Samia Kahn: 
+* Ethan Jones: 
+
