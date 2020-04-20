@@ -13,7 +13,7 @@ Our goal is to predict the likelihood that the result of a chess game can be giv
 ## Results and Discussion
 
 ### The Data
-Source: https://www.kaggle.com/datasnaek/chess
+Source:  [link text itself]: https://www.kaggle.com/datasnaek/chess
 
 Our team employed a data-source that provided information on over 20,000 games played on the website Lichess.org. The set included data on both sets of players, the game's duration, the end result, all moves (in Standard Chess Notation), the names of the openings used by both players, and other miscellaneous information.
 
@@ -42,7 +42,7 @@ Recall graph as opening length increase
 
 ### What We Accomplished
 
-Initially, our ideal outcome was an algorithm that predicted the result of the whole game based on the initial moves of both the players with a high degree of accuracy. From our plots, it is apparent that using only one move for the opening is insufficient because the accuracy is only about 55%. By increasing the number of moves in the opening, accuracy increases to over 95%, which can is high enough for the scope of our project. Additionally, our models were also tested for precision and recall, which behaved similarly to accuracy.
+Initially, our ideal outcome was an algorithm that predicted the result of the whole game based on the initial moves of both the players with a high degree of accuracy. From the feedback we recieved we decided to aslso take into account precision and recall. From our plots, it is apparent that using only one move for the opening is insufficient because the accuracy is only about 55%. By increasing the number of moves in the opening, accuracy increases to over 95%, which can is high enough for the scope of our project. Additionally, our models were also tested for precision and recall, which behaved similarly to accuracy.
 
 ### Future Work
 
@@ -50,10 +50,11 @@ In the future, our primary focus would revolve around using a larger dataset tha
 
 We would also be interested in seeing how our results would change when including more features in the decision tree's training. For example, would the average amount of time a player spends making each move help indicate their confidence and skill? The team also was interested in exploring the opening moves' significance as a fraction of the total number of moves in the game. This would mean that the first three moves in a game of thirty moves would be treated equivalently to evaluating the first eight moves in a game of eighty moves.
 
-##References
-Chassy, Philippe, and Fernand Gobet. “Measuring Chess Experts' Single-Use Sequence Knowledge: an Archival Study of Departure from 'Theoretical' Openings.” PloS One, Public Library of Science, 16 Nov. 2011 www.ncbi.nlm.nih.gov/pmc/articles/PMC3217924/. 
+## References
 
-“Deep Blue.” IBM100 - Deep Blue, IBM www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/. 
+Chassy, Philippe, and Fernand Gobet. “Measuring Chess Experts' Single-Use Sequence Knowledge: an Archival Study of Departure from 'Theoretical' Openings.” PloS One, Public Library of Science, 16 Nov. 2011 [link text itself]: www.ncbi.nlm.nih.gov/pmc/articles/PMC3217924/. 
+
+“Deep Blue.” IBM100 - Deep Blue, IBM [link text itself]: www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/. 
 
 Silver, David, et al. “Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.” ArXiv.org, Cornell University, 5 Dec. 2017 arxiv.org/abs/1712.01815v1.
 
