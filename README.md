@@ -50,7 +50,8 @@ In the future, our primary focus would revolve around using a larger dataset tha
 
 We would also be interested in seeing how our results would change when including more features in the decision tree's training. For example, would the average amount of time a player spends making each move help indicate their confidence and skill? The team also was interested in exploring the opening moves' significance as a fraction of the total number of moves in the game. This would mean that the first three moves in a game of thirty moves would be treated equivalently to evaluating the first eight moves in a game of eighty moves.
 
-##References
+## References
+
 Chassy, Philippe, and Fernand Gobet. “Measuring Chess Experts' Single-Use Sequence Knowledge: an Archival Study of Departure from 'Theoretical' Openings.” PloS One, Public Library of Science, 16 Nov. 2011 www.ncbi.nlm.nih.gov/pmc/articles/PMC3217924/. 
 
 “Deep Blue.” IBM100 - Deep Blue, IBM www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/. 
