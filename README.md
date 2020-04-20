@@ -29,14 +29,17 @@ This procedure was performed 10 times; initially, only the first move for each p
 
 To visualize our results, we generated plots.
 
-Accuracy graph as opening length increase
-*insert image
+Accuracy graph as opening length increases:
 
-Precision graph as opening length increase
-*insert image
+![](accuracy_graph.png)
 
-Recall graph as opening length increase
-*insert image
+Precision graph as opening length increases:
+
+![](precision_graph.png)
+
+Recall graph as opening length increases:
+
+![](recall_graph.png)
 
 ## Conclusion
 
