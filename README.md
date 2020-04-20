@@ -4,11 +4,11 @@ Team Members: Samia Khan, Minseo Kwak, Ethan Jones, and Kyle Keirstead
 
 ## Introduction
 
-Chess has been studied as a subject of artificial intelligence for many decades, ranging back all the way to the 1950s. During this time, various aspects of the game have been studied; one of the most notable instances of this is IBM's Deep Blue computer. In 1997, Deep Blue beat chess champion Garry Kasparov ("Deep Blue"), proving AI's ability to compete against (and beat) the best human chess players.
+Chess has been studied as a subject of artificial intelligence consistently for many decades, which is why it has been describes as, “the most widely-studied domain in the history of artificial intelligence” (Silver et al. 1). Ranging back all the way to the 1950s, various aspects of the game have been studied; one of the most notable instances of this is IBM's Deep Blue computer. In 1997, Deep Blue beat chess champion Garry Kasparov ("Deep Blue"), proving AI's ability to compete against (and beat) the best human chess players.
 
 Given that IBM was able to achieve this over 20 years ago and technology has only continued to evolve, our team chose to focus on creating something that has the ability to derive conclusions from prior player performance and the choice of opening moves in a chess match. Chess always begins with the same initial board layout; as a result, different combinations of opening moves occur frequently in play and have the potential to be used to predict the outcome of the match at a very early stage. Point systems in chess are often used as the game progresses as a measure of which player holds an advantage; however, our work studies the earliest moves in the game (before players generally begin trading pieces).
 
-Our goal is to predict the likelihood of the result of a chess game given only the knowledge of the first x moves and the ratings of the two players involved in the match. Initially, we believed that this may be useful for players to choose certain openings; though our work may be useful in this respect, the choice of moves should be viewed as a causality of the player's experience. As a result, an inexperienced player making the moves in a bid to play better may yield moderate performance gains, but ultimately the opening moves lead to victory not because they are superior, but because the player making them is superior and recognizes the advantages of using certain openings.
+Our goal is to predict the likelihood that the result of a chess game can be given using only the knowledge of the first x moves and the ratings of the two players involved in the match. Initially, we believed that this may be useful for players to choose certain openings; though our work may be useful in this respect, the choice of moves should be viewed as a causality of the player's experience. As a result, an inexperienced player making the moves in a bid to play better may yield moderate performance gains, but ultimately the opening moves lead to victory not because they are superior, but because the player making them is superior and recognizes the advantages of using certain openings.
 
 ## Results and Discussion
 
@@ -27,11 +27,22 @@ In creating decision trees, each combination of moves represents a node. Using a
 
 This procedure was performed 10 times; initially, only the first move for each player was being considered, and in each iteration another move was added and a new list of keys was formed until the keys represented the first 10 moves of the game. As more moves were added, the tree began to branch out, and a wider variety of potential sequences of moves appeared as keys. As a result, one-off instances began to occur; with only one piece of data corresponding to a certain key, it was impossible to split into training and testing data, and in these situations the key was not included in our findings. 
 
-To visualize our results, we generated plots. -> Need to talk about and show plots here. <-
+To visualize our results, we generated plots.
+
+Accuracy graph as opening length increase
+*insert image
+
+Precision graph as opening length increase
+*insert image
+
+Recall graph as opening length increase
+*insert image
 
 ## Conclusion
 
 ### What We Accomplished
+
+Initally, our ideal outcome was an algorithm that predicted the outcome of the whoel game based on the initial moves of both the players with a high degree of accuracy.
 
 ### Future Work
 
@@ -39,10 +50,17 @@ In the future, our primary focus would revolve around using a larger dataset tha
 
 We would also be interested in seeing how our results would change when including more features in the decision tree's training. For example, would the average amount of time a player spends making each move help indicate their confidence and skill? The team also was interested in exploring the opening moves' significance as a fraction of the total number of moves in the game. This would mean that the first three moves in a game of thirty moves would be treated equivalently to evaluating the first eight moves in a game of eighty moves.
 
+##References
+Chassy, Philippe, and Fernand Gobet. “Measuring Chess Experts' Single-Use Sequence Knowledge: an Archival Study of Departure from 'Theoretical' Openings.” PloS One, Public Library of Science, 16 Nov. 2011 www.ncbi.nlm.nih.gov/pmc/articles/PMC3217924/. 
+
+“Deep Blue.” IBM100 - Deep Blue, IBM www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/. 
+
+Silver, David, et al. “Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.” ArXiv.org, Cornell University, 5 Dec. 2017 arxiv.org/abs/1712.01815v1. 
+
 ## Distribution of Work
 
 * Kyle Keirstead: 
 * Minseo Kwak: 
-* Samia Kahn: 
+* Samia Khan: 
 * Ethan Jones: 
 
